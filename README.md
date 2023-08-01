@@ -5,14 +5,14 @@ Neural Green's Function: Theory, Numerics, and Applications
 <table>
 <tr><td colspan="2"><a href="#theory">1. Theory</a></td></tr>
 <tr>
-    <td>&ensp;<a href="#elliptic">1.1 Elliptic Equation</a></td>
-    <td>&ensp;<a href="#helmholtz">1.2 Helmholtz Equation</a></td>
+    <td>&ensp;<a href="#elliptic">1.1 Elliptic Problem</a></td>
+    <td>&ensp;<a href="#helmholtz">1.2 Helmholtz Problem</a></td>
 </tr>
 <tr><td colspan="2"><a href="#numerics">2. Numerics</a></td></tr>
 <tr>
     <td>&ensp;<a href="#neural-operator">2.1 Neural Operator</a></td>
-    <td>&ensp;<a href="#deep-green">2.2 Deep Green</a></td>
-    <td>&ensp;<a href="#neural-green">2.3 Neural Green</a></td>
+    <td>&ensp;<a href="#green-data-driven">2.2 Data-Driven Green</a></td>
+    <td>&ensp;<a href="#green-data-free">2.3 Data-Free Green</a></td>
 </tr>
 <tr><td colspan="2"><a href="#applications">3. Applications</a></td></tr>
 <tr>
@@ -22,9 +22,9 @@ Neural Green's Function: Theory, Numerics, and Applications
 
 ## [Theory](#content) 
 
-### [Elliptic Equation](#content)
+### [Elliptic Problem](#content)
 
-### [Helmholtz Equation](#content)
+### [Helmholtz Problem](#content)
 
 ## [Numerics](#content) 
 
@@ -121,15 +121,11 @@ Neural Green's Function: Theory, Numerics, and Applications
 
    *Colin White, Renbo Tu, Jean Kossaifi, Gennady Pekhimenko, Kamyar Azizzadenesheli, and Anima Anandkumar.*
 
-### [Deep Green](#content)
+### [Data-Driven Green](#content)
 
 1. **Learning Green's functions associated with time-dependent partial differential equations.** JMLR, 2022. [paper](https://www.jmlr.org/papers/volume23/22-0433/22-0433.pdf)
 
    *Nicolas Boullé, Seick Kim, Tianyi Shi, and Alex Townsend.*
-
-1. **BI-GreenNet: Learning Green's functions by boundary integral network.** arXiv, 2022. [paper](https://arxiv.org/abs/2204.13247)
-
-   *Guochang Lin, Fukai Chen, Pipi Hu, Xiang Chen, Junqing Chen, Jun Wang, and Zuoqiang Shi.*
 
 1. **DeepGreen: Deep learning of Green’s functions for nonlinear boundary value problems.** Scientific Reports, 2021. [paper](https://www.nature.com/articles/s41598-021-00773-x)
 
@@ -155,7 +151,12 @@ Neural Green's Function: Theory, Numerics, and Applications
 
    *Ziad Aldirany, R´egis Cottereau, Marc Laforest, and Serge Prudhomme.*
 
-### [Neural Green](#content)
+### [Data-Free Green](#content)
+
+1. **BI-GreenNet: Learning Green's functions by boundary integral network.** arXiv, 2022. [paper](https://arxiv.org/abs/2204.13247)
+
+   *Guochang Lin, Fukai Chen, Pipi Hu, Xiang Chen, Junqing Chen, Jun Wang, and Zuoqiang Shi.*
+
 
 1. **A universal PINNs method for solving partial differential equations with a point source.** IJCAI, 2022. [paper](https://www.ijcai.org/proceedings/2022/533)
 
