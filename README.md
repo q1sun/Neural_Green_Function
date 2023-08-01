@@ -8,14 +8,12 @@ Neural Green's Function: Theory, Numerics, and Applications
     <td>&ensp;<a href="#elliptic">1.1 Elliptic Equation</a></td>
     <td>&ensp;<a href="#helmholtz">1.2 Helmholtz Equation</a></td>
 </tr>
-
 <tr><td colspan="2"><a href="#numerics">2. Numerics</a></td></tr>
 <tr>
     <td>&ensp;<a href="#neural-operator">2.1 Neural Operator</a></td>
     <td>&ensp;<a href="#neural-green-data-driven">2.2 Green's Function (Data-Driven)</a></td>
     <td>&ensp;<a href="#neural-green-data-free">2.3 Green's Function (Data-Free)</a></td>
 </tr>
-
 <tr><td colspan="2"><a href="#applications">3. Applications</a></td></tr>
 <tr>
     <td>&ensp;<a href="#neural-operator">3.1 Iterative Methods</a></td>
