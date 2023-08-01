@@ -11,8 +11,8 @@ Neural Green's Function: Theory, Numerics, and Applications
 <tr><td colspan="2"><a href="#numerics">2. Numerics</a></td></tr>
 <tr>
     <td>&ensp;<a href="#neural-operator">2.1 Neural Operator</a></td>
-    <td>&ensp;<a href="#neural-green-data-driven">2.2 Green's Function (Data-Driven)</a></td>
-    <td>&ensp;<a href="#neural-green-data-free">2.3 Green's Function (Data-Free)</a></td>
+    <td>&ensp;<a href="#deep-green">2.2 Deep Green</a></td>
+    <td>&ensp;<a href="#neural-green">2.3 Neural Green</a></td>
 </tr>
 <tr><td colspan="2"><a href="#applications">3. Applications</a></td></tr>
 <tr>
@@ -121,7 +121,7 @@ Neural Green's Function: Theory, Numerics, and Applications
 
    *Colin White, Renbo Tu, Jean Kossaifi, Gennady Pekhimenko, Kamyar Azizzadenesheli, and Anima Anandkumar.*
 
-### [Green's Function (Data-Driven)](#content)
+### [Deep Green](#content)
 
 1. **Learning Green's functions associated with time-dependent partial differential equations.** JMLR, 2022. [paper](https://www.jmlr.org/papers/volume23/22-0433/22-0433.pdf)
 
@@ -155,7 +155,7 @@ Neural Green's Function: Theory, Numerics, and Applications
 
    *Ziad Aldirany, R´egis Cottereau, Marc Laforest, and Serge Prudhomme.*
 
-### [Green's Function (Data-Free)](#content)
+### [Neural Green](#content)
 
 1. **A universal PINNs method for solving partial differential equations with a point source.** IJCAI, 2022. [paper](https://www.ijcai.org/proceedings/2022/533)
 
