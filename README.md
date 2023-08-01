@@ -1,117 +1,25 @@
 # Neural_Green_Function
 Neural Green's Function: Theory, Numerics, and Applications
 
-# Neural-PDE-Solver
-
-PDE: Partial Differentiable Equation
-
-Contributed by Chunyang Zhang.
-
 ## [Content](#content)
 <table>
-<tr><td colspan="2"><a href="#survey-papers">1. Survey</a></td></tr> 
-<tr><td colspan="2"><a href="#model">2. Model</a></td></tr>
+<tr><td colspan="2"><a href="#theory">1. Theory</a></td></tr>
 <tr>
-    <td>&ensp;<a href="#pinn">2.1 PINN</a></td>
-    <td>&ensp;<a href="#deeponet">2.2 DeepONet</a></td>
+    <td>&ensp;<a href="#elliptic">1.1 Elliptic Equation</a></td>
+    <td>&ensp;<a href="#helmholtz">1.2 Helmholtz Equation</a></td>
 </tr>
+
+<tr><td colspan="2"><a href="#numerics">2. Numerics</a></td></tr>
 <tr>
-    <td>&ensp;<a href="#fourier-operator">2.3 Fourier Operator</a></td>
-    <td>&ensp;<a href="#graph-network">2.4 Graph Network</a></td>
+    <td>&ensp;<a href="#neural-operator">2.1 Neural Operator</a></td>
+    <td>&ensp;<a href="#neural-green-data-driven">2.2 Neural Green (Data-Driven)</a></td>
+    <td>&ensp;<a href="#neural-green-data-free">2.3 Neural Green (Data-Free)</a></td>
 </tr>
+
+<tr><td colspan="2"><a href="#applications">3. Applications</a></td></tr>
 <tr>
-    <td>&ensp;<a href="#green-function">2.5 Green Function</a></td>
-    <td>&ensp;<a href="#finite-element">2.6 Finite Element</a></td>
+    <td>&ensp;<a href="#neural-operator">3.1 Iterative Methods</a></td>
 </tr>
-<tr>
-    <td>&ensp;<a href="#convolution">2.7 Convolution</a></td>
-    <td>&ensp;<a href="#autoencoder">2.8 AutoEncoder</a></td>
-</tr>
-<tr>
-    <td>&ensp;<a href="#neural-operator">2.9 Neural Operator</a></td>
-    <td>&ensp;<a href="#identification">2.10 Identification</a></td>
-<tr>
-    <td>&ensp;<a href="#machine-learning">2.11 Machine Learning</a></td>
-    <td>&ensp;<a href="#neural-ode">2.12 Neural ODE</a></td>
-</tr>
-<tr><td colspan="2"><a href="#mechanism">3. Mechanism</a></td></tr>
-<tr>
-    <td>&ensp;<a href="#library">3.1 Library</a></td>
-    <td>&ensp;<a href="#analysis">3.2 Analysis</a></td>
-</tr>
-<tr>
-    <td>&ensp;<a href="#attention">3.3 Attention</a></td>
-    <td>&ensp;<a href="#neural-implicit-flow">3.4 Neural Implicit Flow</a></td>
-</tr>
-<tr>
-    <td>&ensp;<a href="#disentangle">3.5 Disentangle</a></td>
-    <td>&ensp;<a href="#meta-learning">3.6 Meta Learning</a></td>
-</tr>
-<tr>
-    <td>&ensp;<a href="#automl">3.7 AutoML</a></td>
-    <td>&ensp;<a href="#sampling">3.8 Sampling</a></td>
-</tr>
-<tr>
-    <td>&ensp;<a href="#latent-space">3.9 Latent Space</a></td>
-    <td>&ensp;<a href="#loss-function">3.10 Loss Function</a></td>
-</tr>
-<tr>
-    <td>&ensp;<a href="#decomposition">3.11 Decomposition</a></td>
-    <td>&ensp;<a href="#mesh">3.12 Mesh</a></td>
-</tr>
- <tr>
-    <td>&ensp;<a href="#generative-models">3.13 Generative Model</a></td>
-    <td>&ensp;<a href="#gaussian-process">3.14 Gaussian Process</a></td>
-</tr>
- <tr>
-    <td>&ensp;<a href="#solver">3.15 Solver</a></td>
-    <td>&ensp;<a href="#variation">3.16 Variation</a></td>
-</tr>
- <tr>
-    <td>&ensp;<a href="#bayesian">3.17 Bayesian</a></td>
-    <td>&ensp;<a href="#lagrangian">3.18 Lagrangian</a></td>
-</tr>
- <tr>
-    <td>&ensp;<a href="#uncertainty-quantification">3.19 Uncertainty Quantification</a></td>
-    <td>&ensp;<a href="#active-learning">3.20 Active Learning</a></td>
-</tr>
- <tr>
-    <td>&ensp;<a href="#active-learning">3.21 Active Learning</a></td>
-    <td>&ensp;<a href="#multi-scale">3.22 Multi Scale</a></td>
-</tr>
- <tr>
-    <td>&ensp;<a href="#multi-fidelity">3.23 Multi Fidelity</a></td>
-    <td>&ensp;<a href="#multi-grid">3.24 Multi Grid</a></td>
-</tr>
-<tr><td colspan="2"><a href="#applications">4. Applications</a></td></tr> 
-<tr>
-    <td>&ensp;<a href="#optimization">4.1 Optimization</a></td>
-    <td>&ensp;<a href="#fluid">4.2 Fluid</a></td>
-</tr> 
-<tr>
-    <td>&ensp;<a href="#reconstruction">4.3 Reconstruction</a></td>
-    <td>&ensp;<a href="#physics">4.4 Physics</a></td>
-</tr>
-<tr>
-    <td>&ensp;<a href="#image">4.5 Image</a></td>
-    <td>&ensp;<a href="#mechanics">4.6 Mechanics</a></td>
-</tr> 
-<tr>
-    <td>&ensp;<a href="#robotics">4.7 Robotics</a></td>
-    <td>&ensp;<a href="#cybernetics">4.8 Cybernetics</a></td>
-</tr> 
-<tr>
-    <td>&ensp;<a href="#inverse-design">4.9 Inverse Design</a></td>
-    <td>&ensp;<a href="#quantum">4.10 Quantum</a></td>
-</tr> 
-<tr>
-    <td>&ensp;<a href="#climate">4.11 Climate</a></td>
-    <td>&ensp;<a href="#game-theory">4.12 Game Theory</a></td>
-</tr>
-<tr>
-    <td>&ensp;<a href="#manufacturing">4.13 Manufacturing</a></td>
-    <td>&ensp;<a href="#molecules">4.14 Molecules</a></td>
-</tr> 
 </table>
 
 
